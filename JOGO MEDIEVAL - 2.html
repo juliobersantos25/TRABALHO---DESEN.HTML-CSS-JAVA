@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <link rel="stylesheet" href="css-jogo.css">
+        <title>TERRA MÉDIA</title>
+        <meta charset="uft=8">
+    </head>
+    
+    <body>
+        
+
+       <H1>JOGABILIDADE E PERSONAGENS</H1>
+       <H2>JOGABILIDADE</H2>
+       <P>
+           BATALHAS DA TERRA MÉDIA É UM JOGO DE RPG QUE MANTÉM A TRADICIONAL
+           JOGABILIDADE DE UM JOGO DE MUNDO ABERTO.
+           O JOGADOR É LIVRE PARA ANDAR PELA TERRA DE TUMTUM.
+           EM MEDIEVAL HÁ NOVE GRANDES CIDADES QUE SÃO AS 
+           PRINCIPAIS DO JOGO.
+       </P>
+       <H2>PERSONAGENS</H2>
+       <P>
+         EM TERRA MÉDIA PODE ESCOLHER DIVERSOS PERSONAGENS ANTES DE COMEÇAR A AVENTURA.
+         
+    
+       </P>
+
+
+
+
+       <div>
+
+        <button><li>OGRO</li></button>
+<button> <li>GUERREIRO</li></button>
+<button><li>CAÇADOR</li></button>
+<button> <li>FEITICEIRO</li></button>
+<button><li>CAMPONÊS</li></button>
+
+
+       </div>
+
+       
+      
+       <img src="personagem.jpg" alt="imagem não carregou" width="800" height="300">
+
+
+       <footer>
+        <div>
+           <h2>
+              REDES DE COMPUTADORES - ESTÁCIO
+  
+           </h2>
+        </div>
+     
+     </footer>
+  
+
+    </body>
+
+    <script>
+        var Objs, myJSON, text, obj;
+    
+        Objs = {
+    
+            "id": [1, 2, 3, 4],
+            "personagens": ["ogro", "guerreiro", "caçador", "camponês"],
+            "ogro": ["Bravo "],
+            "guereiro": ["valente"],
+            "campones": ["trabalhador"],
+            "feiticeiro": ["mago"],
+
+          };
+    
+        myJSON = JSON.stringify(Objs);
+        localStorage.setItem("JSON", myJSON);
+    
+        text = localStorage.getItem("JSON");
+        obj = JSON.parse(text);
+    
+        document.getElementById("id").innerHTML = obj.id[0];
+        document.getElementById("ogro").innerHTML = obj.bravo[0];
+        document.getElementById("guerreiro").innerHTML = obj.valente[0];
+        document.getElementById("campones").innerHTML = obj.trabalhador[0];
+        document.getElementById("feitceiro").innerHTML = obj.mago[0];
+    
+        </script>
+    
+    
+    
+</html>

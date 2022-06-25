@@ -1,0 +1,29 @@
+div {
+    color: blue;
+    position: -ms-page;
+    fill: aqua;
+}
+footer{
+    color: green;
+    
+}
+h1{
+    color: red;
+    position: static;
+    fill: black;
+    align-items: center;
+    padding: 0%;
+}
+caption{
+    color: red;
+    
+}
+th{
+    color: green;
+}
+tr{
+    color: darkgrey;
+}
+footer {
+
+}
